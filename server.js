@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Initialize the Google Generative AI client
+// const apiKey = process.env.GOOGLE_API_KEY;
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
