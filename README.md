@@ -1,7 +1,7 @@
 # GitHub Insight 🕵️‍♂️
 
 ## About
-GitHub Insight is a versatile project designed to enhance the GitHub experience by offering three distinct services. It generates detailed GitHub profiles, allows users to roast profiles using the Google Gemini API, and provides comprehensive analysis of GitHub activities. This open-source application aims to deliver insightful information and a bit of fun while engaging with GitHub profiles. 🚀
+GitHub Insight is a project designed to enhance the GitHub experience by offering three distinct services. It generates detailed GitHub profiles, allows users to roast profiles using the Google Gemini API, and provides comprehensive analysis of GitHub activities. This open-source application aims to deliver insightful information and a bit of fun while engaging with GitHub profiles. 🚀
 
 ## Features
 1. **GitHub Profile Generator:** 📸 Displays profile picture, bio, following, followers, and repositories.

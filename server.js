@@ -39,6 +39,7 @@
 // const PORT = process.env.PORT || 3000;
 // app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));
 
+
 require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
@@ -79,4 +80,4 @@ app.get('/roast/:username', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server is running on http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
