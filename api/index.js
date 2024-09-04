@@ -1,57 +1,14 @@
-// require('dotenv').config();
-// const express = require('express');
-// const axios = require('axios');
-// const { GoogleGenerativeAI } = require('@google/generative-ai');
-
-// const app = express();
-// app.use(express.json());
-// app.use(express.static('public'));
-
-// // Initialize the Google Generative AI client
-// const apiKey = process.env.GOOGLE_API_KEY;
-// if (!apiKey) {
-//     console.error('Google API Key is not set in environment variables.');
-//     process.exit(1);
-// }
-
-// const genAI = new GoogleGenerativeAI(apiKey);
-// const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
-
-// app.get('/roast/:username', async (req, res) => {
-//     const { username } = req.params;
-//     try {
-//         // Fetch GitHub user data
-//         const githubResponse = await axios.get(`https://api.github.com/users/${username}`);
-//         const profileData = githubResponse.data;
-
-//         if (!profileData) {
-//             return res.status(404).json({ error: "GitHub user not found" });
-//         }
-
-//         // Prepare the roast prompt
-//         const prompt = `Give me a light-hearted, humorous roast for a GitHub user named ${profileData.name || username}. This user has ${profileData.public_repos} repositories and ${profileData.followers} followers. Make sure the roast is clever and playful, poking fun at their coding skills, repository names, or follower count, but keep it friendly and good-natured.`;
-
-//         // Generate roast with Google Gemini
-//         const result = await model.generateContent(prompt);
-//         const responseText = await result.response.text();
-        
-//         res.json({ roast: responseText.trim() });
-//     } catch (error) {
-//         console.error('Error details:', error.response ? error.response.data : error.message);
-//         res.status(500).json({ error: 'Failed to fetch data or generate roast', details: error.response ? error.response.data : error.message });
-//     }
-// });
-
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//     console.log(`Server is running on http://localhost:${PORT}`);
-// });
-
 const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
-app.listen(3000, () => console.log("Server ready on port 3000."));
+// Add your /roast/:username route here
+app.get('/roast/:username', async (req, res) => {
+    // ... (your roast logic here)
+    res.json({ roast: "This is a placeholder roast." });
+});
+
+// Remove the app.listen() call
 
 module.exports = app;
