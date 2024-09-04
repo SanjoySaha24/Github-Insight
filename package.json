@@ -7,11 +7,11 @@
     "openai": "^4.53.2"
   },
   "scripts": {
-    "start": "node api/index.js"
+    "start": "node server.js"
   },
   "name": "new-folder",
   "version": "1.0.0",
-  "main": "script.js",
+  "main": "server.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
