@@ -7,7 +7,7 @@
     "openai": "^4.53.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node api/server.js"
   },
   "name": "new-folder",
   "version": "1.0.0",
