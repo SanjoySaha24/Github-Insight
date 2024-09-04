@@ -82,8 +82,8 @@
 
 // import axios from 'axios';
 // import { GoogleGenerativeAI } from '@google/generative-ai';
-import axios from 'axios';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+const axios = require('axios');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
