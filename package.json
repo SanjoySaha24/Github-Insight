@@ -4,7 +4,7 @@
     "axios": "^1.7.7",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "openai": "^4.53.2"
+    "openai": "4.53.2"
   },
   "scripts": {
     "start": "node api/server.js"
